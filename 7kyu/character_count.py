@@ -2,16 +2,14 @@
 
 
 def ordered_count(input):
-    diction = {}
+    check = ''
     result = []
     for x in input:
-        if x not in diction:
-            diction[x] = input.count(x)
-
-    for key, value in diction.iteritems():
-        temp = (key, value)
-        result.append(temp)
-    return result  
+        if x not in check:
+            temp = (x, input.count(x))
+            result.append(temp)
+            check += x
+    return result 
 
 
 
