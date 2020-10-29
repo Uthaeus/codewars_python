@@ -8,7 +8,7 @@ def move_zeros(array):
     for i in array:
         if str(i) == '0':
             if i == '0':
-                zeros.append('0')
+                pre.append('0')
             elif i == 0:
                 zeros.append(0)
         elif isinstance(i, float):
